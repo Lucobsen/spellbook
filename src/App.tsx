@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+<<<<<<< Updated upstream
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -23,6 +24,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+=======
+>>>>>>> Stashed changes
 const App = () => {
   return (
     <div className="App">
