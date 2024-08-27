@@ -3,7 +3,7 @@ import "./App.css";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics, logEvent } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -24,6 +24,8 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const App = () => {
+  logEvent(analytics, "app_init");
+
   return (
     <div className="App">
       <header className="App-header">
